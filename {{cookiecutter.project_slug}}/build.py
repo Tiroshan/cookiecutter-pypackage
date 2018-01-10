@@ -34,7 +34,7 @@ def set_unit_tests_properties(project):
 
     # Directory where unittest modules are located.
     # Default - 'src/unittest/python'
-    project.set_property('dir_source_unittest_python', 'src/test/python')
+    # project.set_property('dir_source_unittest_python', 'src/unittest/python')
 
     # Output teamcity service messages with test names and errors.
     # Default - False
