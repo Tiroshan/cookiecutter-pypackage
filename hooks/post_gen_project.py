@@ -12,6 +12,5 @@ if __name__ == '__main__':
 
     if '{{ cookiecutter.create_author_file }}' != 'y':
         remove_file('AUTHORS.rst')
-        remove_file('docs/authors.rst')
 
 
