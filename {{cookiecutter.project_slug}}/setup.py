@@ -8,8 +8,6 @@ from setuptools import setup, find_packages
 with open('README.rst') as readme_file:
     readme = readme_file.read()
 
-with open('HISTORY.rst') as history_file:
-    history = history_file.read()
 
 requirements = [
     'pybuilder==0.11.12'
@@ -30,7 +28,7 @@ setup(
     name='{{ cookiecutter.project_slug }}',
     version='{{ cookiecutter.version }}',
     description="{{ cookiecutter.project_short_description }}",
-    long_description=readme + '\n\n' + history,
+    long_description=readme + '\n\n',
     author="{{ cookiecutter.full_name.replace('\"', '\\\"') }}",
     author_email='{{ cookiecutter.email }}',
     url='https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}',
@@ -41,10 +39,6 @@ setup(
     zip_safe=False,
     keywords='{{ cookiecutter.project_slug }}',
     classifiers=[
-        'Development Status :: 2 - Pre-Alpha',
-        'Intended Audience :: Developers',
-
-        'Natural Language :: English',
         "Programming Language :: Python :: 2",
         'Programming Language :: Python :: 2.6',
         'Programming Language :: Python :: 2.7',
